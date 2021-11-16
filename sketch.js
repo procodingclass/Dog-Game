@@ -1,4 +1,4 @@
-
+//REMEMBER TO ADD CONFIG INFORMATION
 
 var dog;
 
@@ -53,12 +53,8 @@ function draw(){
 }
 
 function changePosition(x,y){
-    database.ref("dog/position").update({
-        x:dog.x+x,
-        y:dog.y+y
-    })
-    //dog.x = dog.x + x;
-    //dog.y = dog.y + y;
+    dog.x = dog.x + x;
+    dog.y = dog.y + y;
 }
 
 
